@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LibroCompraController;
 use Inertia\Inertia;
 
 Route::get('/', function () {
@@ -24,4 +25,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+
+Route::get('/libro-compras', [LibroCompraController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('compras.index');
+
+require __DIR__ . '/auth.php';
