@@ -18,13 +18,13 @@ export default function Dashboard() {
                         <div className="p-6 text-gray-900">
                             <p className="mb-4">Te has loggeado Cabron</p>
                             
-                            {/* Botón de acceso rápido al Libro de Compras */}
+                            {/* Botón de acceso rápido al Libro de Compras
                             <Link
                                 href={route('compras.index')}
                                 className="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 focus:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150"
                             >
                                 Ir al Libro de Compras
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
